@@ -536,7 +536,7 @@ def ai_aggressive(moves, playerMod: StatModifier, enemyMod: StatModifier, player
         if move.power <= 1:
             continue
 
-        dmg = calc_damage(move, enemy, player, enemyMod, playerMod, MAX_RANGE-1, crit=False, extra_multiplier=1)
+        dmg = calc_damage(move, enemy, player, enemyMod, playerMod, MAX_RANGE, crit=False, extra_multiplier=1)
         if dmg > dmg_max:
             i_max, dmg_max = i, dmg
 
